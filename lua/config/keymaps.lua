@@ -15,3 +15,6 @@ map({ "n", "v" }, "<leader>P", "+P", { desc = "Paste before from system clipboar
 
 -- Keep default p behavior from black-holing when pasting over selection
 map("x", "p", '"_dP', { desc = "Paste without yanking selection" })
+
+-- Open Error
+map("n", "ee", ":lua vim.diagnostic.open_float()<Return>", { desc = "Open Error Details" })
